@@ -1,0 +1,132 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>順天時報 Crypto版 2026年11月17日</title><style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbf9; --paper:#fff; --ink:#1a1a1a; --ink-2:#4a4a4a; --dim:#767676;
+  --rule:#e0ddd6; --rule-strong:#1a1a1a;
+  --accent:#b3261e; --accent-soft:#fdf3f2;
+  --lv1:#1f7a3d; --lv2:#b8860b; --lv3:#d2691e; --lv4:#b3261e;
+  --up:#b3261e; --down:#1f7a3d;
+  --serif:"Noto Serif TC","Songti TC","PingFang TC",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",
+         "Microsoft JhengHei",Roboto,Helvetica,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12120f; --paper:#1a1a17; --ink:#eceae4; --ink-2:#c4c1b8; --dim:#8f8c85;
+  --rule:#32312c; --rule-strong:#eceae4;
+  --accent:#e8564c; --accent-soft:#2a1815;
+  --lv1:#4ea96b; --lv2:#d4a72c; --lv3:#e8863f; --lv4:#e8564c;
+  --up:#e8564c; --down:#4ea96b;
+}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.7;
+  padding:0 20px 60px;max-width:1080px;margin-inline:auto}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+p{margin:0 0 .85em}
+
+/* ── 報頭 ───────────────────────────────────────── */
+.masthead{border-bottom:3px double var(--rule-strong);padding:28px 0 14px;margin-bottom:6px}
+.masthead h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3.2rem);
+  font-weight:800;letter-spacing:.06em;margin:0;line-height:1.05}
+.masthead .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:8px}
+.dateline{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;
+  border-bottom:1px solid var(--rule);padding:8px 0 10px;margin-bottom:26px;
+  font-size:.76rem;letter-spacing:.06em;color:var(--dim);text-transform:uppercase}
+.dateline b{color:var(--ink);font-weight:700}
+
+/* ── 通欄標題 ───────────────────────────────────── */
+.section-head{font-family:var(--sans);font-size:.72rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--accent);
+  border-top:2px solid var(--rule-strong);padding-top:8px;margin:42px 0 18px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.section-head .sub{font-weight:400;letter-spacing:.04em;color:var(--dim);
+  text-transform:none;font-size:.74rem}
+
+/* ── 頭條 ───────────────────────────────────────── */
+.lead{border-bottom:1px solid var(--rule);padding-bottom:26px;margin-bottom:26px}
+.lead h2{font-family:var(--serif);font-size:clamp(1.5rem,4.2vw,2.3rem);
+  line-height:1.22;font-weight:800;margin:.1em 0 .35em;letter-spacing:-.01em}
+.lead .standfirst{font-size:1.04rem;color:var(--ink-2);line-height:1.72;
+  max-width:62ch}
+.byline{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px;display:flex;gap:10px;align-items:center;
+  flex-wrap:wrap}
+
+/* ── 報導欄位 ───────────────────────────────────── */
+.grid{display:grid;gap:28px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.grid.two,.grid.three{grid-template-columns:1fr}}
+
+article.story{border-top:1px solid var(--rule);padding-top:14px}
+article.story h3{font-family:var(--serif);font-size:1.18rem;line-height:1.32;
+  font-weight:700;margin:.2em 0 .4em}
+article.story.big h3{font-size:1.5rem}
+article.story p{font-size:.94rem;color:var(--ink-2)}
+article.story .meta{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* 等級標記 —— 取代原本的 emoji,用報紙的旗標做法 */
+.flag{display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;
+  border-radius:2px;white-space:nowrap}
+.flag.l1,.flag.calm{color:var(--lv1)}
+.flag.l2,.flag.watch{color:var(--lv2)}
+.flag.l3,.flag.spike{color:var(--lv3)}
+.flag.l4,.flag.call{color:var(--lv4);background:var(--accent-soft)}
+
+/* ── 數據區塊 ───────────────────────────────────── */
+.figure{background:var(--paper);border:1px solid var(--rule);padding:14px 16px;
+  margin:16px 0}
+.figure .cap{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:8px;font-weight:700}
+.stat-row{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:flex-end}
+.stat{display:flex;flex-direction:column;gap:1px}
+.stat .k{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-family:var(--mono);font-size:1.5rem;font-weight:700;line-height:1.1}
+.stat .v.sm{font-size:1.05rem}
+.delta{font-family:var(--mono);font-size:.78rem;font-weight:700}
+.delta.up{color:var(--up)} .delta.down{color:var(--down)} .delta.flat{color:var(--dim)}
+
+/* ── 表格 ───────────────────────────────────────── */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:460px}
+thead th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--dim);font-weight:800;text-align:left;
+  border-bottom:2px solid var(--rule-strong);padding:6px 10px}
+td{padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+tr.group td{background:var(--paper);font-weight:700;border-bottom:1px solid var(--rule-strong)}
+tr.hl td{background:var(--accent-soft)}
+
+/* ── 引文 / 觀點 ────────────────────────────────── */
+.pullquote{font-family:var(--serif);font-size:1.16rem;line-height:1.5;
+  border-left:3px solid var(--accent);padding:2px 0 2px 18px;margin:18px 0;
+  color:var(--ink)}
+.pullquote .attr{display:block;font-family:var(--sans);font-size:.74rem;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+
+/* ── 邊欄清單 ───────────────────────────────────── */
+.briefs{list-style:none;padding:0;margin:0}
+.briefs li{border-bottom:1px solid var(--rule);padding:9px 0;font-size:.9rem}
+.briefs li:last-child{border-bottom:0}
+.briefs .when{font-family:var(--mono);font-size:.72rem;color:var(--dim);margin-right:6px}
+.briefs .why{display:block;color:var(--dim);font-size:.82rem;margin-top:2px}
+
+.note{font-size:.76rem;color:var(--dim);line-height:1.6;margin-top:8px;
+  padding-left:10px;border-left:2px solid var(--rule)}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+
+footer{border-top:3px double var(--rule-strong);margin-top:52px;padding-top:16px;
+  font-size:.74rem;color:var(--dim);line-height:1.7}
+
+@media (max-width:560px){
+  body{padding:0 14px 40px;font-size:15px}
+  .masthead{padding-top:20px}
+  .stat .v{font-size:1.25rem}
+}
+</style></head><body><header class="masthead"><div class="kicker">DeFi · 套利 · 安全事件</div><h1>順天時報 Crypto版</h1></header><div class="dateline"><span>發布 <b>2026年11月17日 07:03(台北)</b></span><span>套利 <b>0 個</b></span><span>高獎勵池 <b>2</b></span><span>安全事件 <b>19 起</b></span><span>本輪成本 <b>$0.2004</b></span></div><div class="section-head"><span>今日頭條</span><span class="sub">過去 24 小時的全局大事</span></div><ul class="briefs"><li><span class="flag spike">值得注意</span> <b>Coinone 揭露承包商客戶資料外洩</b> <a href="https://thecryptobasic.com/2026/11/15/tcb-daily-edition-what-happened-in-crypto-on-november-15-2026/" target="_blank" rel="noopener">[源]</a><span class="why">資料外洩事件可能降低 CEX 用戶對平台安全的信任，影響資金存放與流動性提供決策。</span></li><li><span class="flag spike">值得注意</span> <b>Lighter Perps 遭駭 $10,393,057 美元</b> <a href="https://defillama.com/hacks" target="_blank" rel="noopener">[源]</a><span class="why">資金安全事件;手法:API Key Compromised。</span></li><li><span class="flag watch">一般</span> <b>Trade.xyz 降低 Nvidia 永續合約最大槓桿</b> <a href="https://thecryptobasic.com/2026/11/15/tcb-daily-edition-what-happened-in-crypto-on-november-15-2026/" target="_blank" rel="noopener">[源]</a><span class="why">特定衍生品市場槓桿調整直接影響交易風險與流動性，對使用該平台的 LP 操作者需調整倉位管理。</span></li><li><span class="flag watch">一般</span> <b>JPMorgan 與 DBS 啟用 24/7 互通框架</b> <a href="https://thecryptodesk.substack.com/p/the-crypto-desk-monday-16-november" target="_blank" rel="noopener">[源]</a><span class="why">機構級加密資產轉帳效率提升，可能為 DeFi 帶來更多穩定流動性來源。</span></li><li><span class="flag watch">一般</span> <b>MoneyGram 與 Solflare 合作推 USDC 現金提領</b> <a href="https://thecryptobasic.com/2026/11/16/tcb-daily-edition-what-happened-in-crypto-on-november-16-2026/" target="_blank" rel="noopener">[源]</a><span class="why">改善 Solana 生態 USDC 的法幣出口便利性，有助提升相關 DeFi 池的流動性與退出效率。</span></li></ul><div class="note">DefiLlama 近 48 小時收錄 1 起達保底門檻的安全事件;按日級 UTC 日期篩選,已套用確定性保底。</div><div class="lead"><div class="byline"><span class="flag spike">0 個機會</span><span>社群動態</span></div><h2>資金費率套利掃描器與跨交易所比較</h2><p class="standfirst">X上過去24-48小時未見具體可執行價差、bribe或LP策略細節分享，多為一般工具與風險討論。</p><ul class="briefs"><li>穩定幣脫錨與DEX套利風險</li><li>CEX-DEX與三角套利自動化工具</li></ul></div><div class="section-head"><span>主題</span></div><div class="grid two"><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>安全事件</span></div><h3>Lighter Perps API Key 遭駭損失逾千萬美元</h3><p>Lighter Perps 因 API Key 外洩遭駭，損失約 1039 萬美元，為近期 DeFi perps 平台安全事件之一。Coinone 外包商 MetaM 客戶資料外洩，涉及密碼與錢包地址，可能增加釣魚風險。DefiLlama 另收錄多起小額事件，手法包括算術錯誤與邏輯漏洞。對 LP 營運者而言，API 金鑰管理與第三方供應商風險需特別留意。</p><ul class="briefs"><li>Lighter Perps 遭駭，損失 10,393,057 美元，手法為 API Key Compromised <a href="https://defillama.com/hacks" target="_blank" rel="noopener">▸</a><span class="why">使用 perps 平台或依賴 API 金鑰的 LP 策略需立即審查金鑰權限與儲存方式，防止類似外洩重演</span></li><li>Coinone 外包商 MetaM 客戶支援資料遭入侵，暴露密碼、銀行資訊、錢包地址等 <a href="https://shattered.io/coinone-metam-vendor-breach-11-data-types-passwords-wallet-addresses/" target="_blank" rel="noopener">▸</a><span class="why">可能引發針對 CEX 用戶的釣魚攻擊，間接影響跨平台流動性提供與資金存放決策，建議更新相關密碼</span></li><li>Kava Lend 因 Arithmetic Error 損失 370 萬美元 <a href="https://defillama.com/hacks" target="_blank" rel="noopener">▸</a><span class="why">算術錯誤漏洞顯示合約邏輯審計不足，對依賴類似 lending 池的 LP 需關注協議更新與 bug bounty</span></li></ul><div class="pullquote">審查所有 DeFi perps 或 API 相關金鑰權限，立即輪換可疑憑證；Coinone 用戶更新支援相關密碼<span class="attr">✅ 該做的事</span></div><ul class="briefs"><li><a href="https://x.com/Crypto_Jargon/status/2122288343375610161" target="_blank" rel="noopener">@Crypto_Jargon</a><span class="why">Lighter 遭市場做市商 API keys 外洩損失 1039 萬美元，強調金鑰而非合約 bug 是主要風險</span></li><li><a href="https://x.com/Mr7Seven77/status/2122360671946084392" target="_blank" rel="noopener">@Mr7Seven77</a><span class="why">列出 2026 年多起 key compromise 事件，Lighter 為最新一例，警示中小型協議風險</span></li></ul></article><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>CEX 動態</span></div><h3>Coinone 承包商客戶資料外洩</h3><p>Coinone 宣布承包商 MetaM 客戶服務記錄遭攻擊者存取，引發 CEX 用戶資料外洩疑慮。Lighter Perps 另有 API Key 遭駭事件，損失逾千萬美元。近期 CEX 關閉潮如 CoinEx 有序退場，仍需留意提領風險與儲備證明可信度。</p><ul class="briefs"><li>Coinone 承包商 MetaM 客戶服務記錄遭攻擊者存取，已披露客戶資訊外洩事件 <a href="https://thecryptobasic.com/2026/11/15/tcb-daily-edition-what-happened-in-crypto-on-november-15-2026/" target="_blank" rel="noopener">▸</a><span class="why">可能降低 CEX 用戶對平台安全的信任，影響資金存放與流動性提供決策；DeFi LP 操作者若依賴 CEX 出入金需提高警覺</span></li><li>Lighter Perps 遭駭，損失 $10,393,057 美元，手法為 API Key Compromised <a href="https://defillama.com/hacks" target="_blank" rel="noopener">▸</a><span class="why">資金安全事件提醒 perps 平台 API 管理風險；若 LP 策略涉及相關衍生品需檢查金鑰安全</span></li></ul></article></div><div class="section-head"><span>無重大變化</span></div><ul class="briefs"><li><span class="flag calm">無變化</span> <b>法規與政策</b><span class="why">本日無重大變化</span></li><li><span class="flag calm">無變化</span> <b>DeFi 動態</b><span class="why">本日無重大變化</span></li><li><span class="flag calm">無變化</span> <b>ve(3,3) / DEX</b><span class="why">本日無重大變化</span></li></ul><div class="section-head"><span>收益池的變化</span><span class="sub">比快照有用</span></div><div class="tablewrap"><table style="min-width:620px"><thead><tr><th>變化</th><th>池</th><th>鏈</th><th>獎勵 APY</th><th>TVL</th></tr></thead><tbody><tr><td class="nowrap"><span class="flag l1">新進</span></td><td><b>convex-finance</b><span class="why">FRXETH-CVX</span></td><td class="dim nowrap">Ethereum</td><td class="num">獎勵 15%</td><td class="num dim">$1,184,309</td></tr></tbody></table></div><div class="note">用 <b>log-ratio</b> 判定,不是絕對百分點 —— APY 5%→10% 是翻倍(大事),200%→205% 幾乎沒變,但兩者絕對值都是 +5pp。這跟機率要用 logit 是同一個道理,只是 APY 無界所以用 log-ratio。門檻:變 1.5 倍以上且絕對變動 ≥3pp。</div><div class="section-head"><span>高獎勵池</span><span class="sub">TVL &gt; $1M</span></div><div class="tablewrap"><table style="min-width:620px"><thead><tr><th>池</th><th>鏈</th><th>總 APY</th><th>基礎</th><th>獎勵</th><th>TVL</th></tr></thead><tbody><tr class="group"><td colspan="6">重點鏈 / 協議</td></tr><tr><td><b>pharaoh-v3</b><span class="why">WETH.E-WAVAX</span></td><td class="dim nowrap">Avalanche</td><td class="num"><b>48%</b></td><td class="num dim">0.0%</td><td class="num">48.1%</td><td class="num dim">$4,600,321</td></tr><tr><td><b>pharaoh-v3</b><span class="why">BTC.B-WAVAX</span></td><td class="dim nowrap">Avalanche</td><td class="num"><b>38%</b></td><td class="num dim">0.0%</td><td class="num">37.7%</td><td class="num dim">$3,538,526</td></tr><tr class="group"><td colspan="6">其他</td></tr><tr><td>zeebu<span class="why">ZBU</span></td><td class="dim nowrap">BSC</td><td class="num">829%</td><td class="num dim">0.0%</td><td class="num">829.1%</td><td class="num dim">$1,887,131</td></tr><tr><td>zeebu<span class="why">ZBU</span></td><td class="dim nowrap">Base</td><td class="num">142%</td><td class="num dim">0.0%</td><td class="num">142.0%</td><td class="num dim">$3,283,328</td></tr><tr><td>fables<span class="why">ETH-USDG</span></td><td class="dim nowrap">Robinhood Chain</td><td class="num">114%</td><td class="num dim">0.0%</td><td class="num">114.3%</td><td class="num dim">$1,312,574</td></tr><tr><td>zeebu<span class="why">ZBU</span></td><td class="dim nowrap">Ethereum</td><td class="num">63%</td><td class="num dim">0.0%</td><td class="num">62.8%</td><td class="num dim">$3,208,364</td></tr><tr><td>nest-cl<span class="why">WHYPE-USDC</span></td><td class="dim nowrap">Hyperliquid L1</td><td class="num">42%</td><td class="num dim">0.0%</td><td class="num">42.3%</td><td class="num dim">$9,985,926</td></tr><tr><td>everything<span class="why">EV-USD₮0</span></td><td class="dim nowrap">Arbitrum</td><td class="num">38%</td><td class="num dim">0.3%</td><td class="num">37.3%</td><td class="num dim">$1,546,337</td></tr><tr><td>nest-cl<span class="why">WHYPE-UBTC</span></td><td class="dim nowrap">Hyperliquid L1</td><td class="num">36%</td><td class="num dim">0.0%</td><td class="num">35.9%</td><td class="num dim">$1,891,635</td></tr><tr><td>morpho-blue<span class="why">KPK-WARS-YIELD</span></td><td class="dim nowrap">Ethereum</td><td class="num">44%</td><td class="num dim">22.1%</td><td class="num">22.0%</td><td class="num dim">$5,882,545</td></tr><tr><td>convex-finance<span class="why">CVXCRV</span></td><td class="dim nowrap">Ethereum</td><td class="num">21%</td><td class="num dim">0.0%</td><td class="num">20.7%</td><td class="num dim">$29,507,783</td></tr><tr><td>convex-finance<span class="why">CRV-CVXCRV</span></td><td class="dim nowrap">Ethereum</td><td class="num">21%</td><td class="num dim">0.2%</td><td class="num">20.4%</td><td class="num dim">$4,839,107</td></tr></tbody></table></div><div class="note">獎勵 APY 來自代幣排放,會隨 TVL 進來而稀釋 —— <b>不是穩定收益</b>。基礎 APY(手續費)才是結構性的。</div><div class="section-head"><span>ve(3,3) / Solidly 系</span><span class="sub">依 TVL</span></div><div class="tablewrap"><table style="min-width:480px"><thead><tr><th>ve(3,3) / Solidly 系 DEX</th><th>鏈</th><th>TVL</th><th>7d</th></tr></thead><tbody><tr><td><b><a href="https://aerodrome.finance/" target="_blank" rel="noopener">Aerodrome Slipstream</a></b></td><td class="dim nowrap">Base</td><td class="num">$67,782,455</td><td class="num"><span class="delta down">-6.2%</span></td></tr><tr><td><b><a href="https://aerodrome.finance/" target="_blank" rel="noopener">Aerodrome V1</a></b></td><td class="dim nowrap">Base</td><td class="num">$42,428,128</td><td class="num"><span class="delta down">-16.5%</span></td></tr><tr><td><b><a href="https://www.phar.gg/" target="_blank" rel="noopener">Pharaoh V3</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$22,891,058</td><td class="num"><span class="delta down">-14.7%</span></td></tr><tr><td><b><a href="https://ramses.xyz" target="_blank" rel="noopener">Ramses CL V2</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$7,656,273</td><td class="num"><span class="delta down">-10.0%</span></td></tr><tr><td><b><a href="https://www.phar.gg/" target="_blank" rel="noopener">Pharaoh DLMM</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$5,390,533</td><td class="num"><span class="delta down">-24.4%</span></td></tr><tr><td><b><a href="https://velodrome.finance/" target="_blank" rel="noopener">Velodrome V3</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$4,632,033</td><td class="num"><span class="delta down">-12.6%</span></td></tr><tr><td><b><a href="https://www.phar.gg/" target="_blank" rel="noopener">Pharaoh CL</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$3,900,541</td><td class="num"><span class="delta down">-2.2%</span></td></tr><tr><td><b><a href="https://velodrome.finance/" target="_blank" rel="noopener">Velodrome V2</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$3,806,862</td><td class="num"><span class="delta down">-15.2%</span></td></tr><tr><td><b><a href="https://www.thena.fi" target="_blank" rel="noopener">THENA INTEGRAL</a></b></td><td class="dim nowrap">Binance</td><td class="num">$1,778,527</td><td class="num"><span class="delta down">-14.7%</span></td></tr><tr><td><b><a href="https://blackhole.xyz/" target="_blank" rel="noopener">Blackhole CLMM</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$1,591,008</td><td class="num"><span class="delta down">-14.8%</span></td></tr><tr><td><b><a href="https://www.shadow.so" target="_blank" rel="noopener">Shadow Exchange CLMM</a></b></td><td class="dim nowrap">Sonic</td><td class="num">$1,446,586</td><td class="num"><span class="delta down">-5.5%</span></td></tr><tr><td><b><a href="https://thena.fi/" target="_blank" rel="noopener">THENA V1</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$1,256,540</td><td class="num"><span class="delta down">-11.7%</span></td></tr><tr><td><b><a href="https://www.phar.gg/" target="_blank" rel="noopener">Pharaoh V3 Legacy</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$1,184,343</td><td class="num"><span class="delta down">-16.7%</span></td></tr><tr><td><b><a href="https://blackhole.xyz/" target="_blank" rel="noopener">Blackhole AMM</a></b></td><td class="dim nowrap">Avalanche</td><td class="num">$1,109,502</td><td class="num"><span class="delta down">-10.4%</span></td></tr><tr><td><b><a href="https://www.shadow.so/" target="_blank" rel="noopener">Shadow Exchange Legacy</a></b></td><td class="dim nowrap">Sonic</td><td class="num">$1,041,063</td><td class="num"><span class="delta down">-7.2%</span></td></tr><tr><td><b><a href="https://ramses.xyz" target="_blank" rel="noopener">Ramses Legacy V2</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$679,810</td><td class="num"><span class="delta down">-48.6%</span></td></tr><tr><td><b><a href="https://www.thena.fi" target="_blank" rel="noopener">THENA FUSION</a></b></td><td class="dim nowrap">Binance</td><td class="num">$533,542</td><td class="num"><span class="delta down">-7.7%</span></td></tr><tr><td><b><a href="https://ramses.xyz" target="_blank" rel="noopener">Ramses DLMM</a></b></td><td class="dim nowrap">Multi-Chain</td><td class="num">$305,005</td><td class="num"><span class="delta down">-15.9%</span></td></tr><tr><td><b><a href="https://swapx.fi/" target="_blank" rel="noopener">SwapX Algebra</a></b></td><td class="dim nowrap">Sonic</td><td class="num">$263,894</td><td class="num"><span class="delta down">-9.2%</span></td></tr><tr><td><b><a href="https://velodrome.finance/" target="_blank" rel="noopener">Velodrome V1</a></b></td><td class="dim nowrap">Optimism</td><td class="num">$255,096</td><td class="num"><span class="delta down">-8.6%</span></td></tr></tbody></table></div><div class="section-head"><span>安全事件</span><span class="sub">近 14 天</span></div><div class="tablewrap"><table style="min-width:520px"><thead><tr><th>日期</th><th>目標</th><th>損失</th><th>手法</th></tr></thead><tbody><tr><td class="dim nowrap">11-16</td><td><b>Lighter Perps</b></td><td class="num">$10,393,057</td><td>API Key Compromised</td></tr><tr><td class="dim nowrap">11-16</td><td><b>MORE Markets</b></td><td class="num">$308,000</td><td>Unknown</td></tr><tr><td class="dim nowrap">11-15</td><td><b>Chain Games</b></td><td class="num">$20,000</td><td>Reward Logic Flaw</td></tr><tr><td class="dim nowrap">11-15</td><td><b>Luxor Commander</b></td><td class="num">$0</td><td>Unknown</td></tr><tr><td class="dim nowrap">11-14</td><td><b>Hyprearn Perps</b></td><td class="num">$0</td><td>Unknown</td></tr><tr><td class="dim nowrap">11-14</td><td><b>Kava Lend</b></td><td class="num">$3,700,000</td><td>Arithmetic Error</td></tr><tr><td class="dim nowrap">11-13</td><td><b>Pennysia</b></td><td class="num">$5,131</td><td>Arbitrary External Call</td></tr><tr><td class="dim nowrap">11-12</td><td><b>Edel</b></td><td class="num">$300,000</td><td>Unknown</td></tr><tr><td class="dim nowrap">11-11</td><td><b>Rujira AMM Strategies</b></td><td class="num">$200,000</td><td>Swap Logic Flaw</td></tr><tr><td class="dim nowrap">11-10</td><td><b>Arcus Perps</b></td><td class="num">$2,234,391</td><td>Withdrawal Logic Flaw</td></tr><tr><td class="dim nowrap">11-10</td><td><b>Across</b></td><td class="num">$0</td><td>DNS Hijack</td></tr><tr><td class="dim nowrap">11-10</td><td><b>Initia</b></td><td class="num">$615,000</td><td>Private Key Compromised</td></tr><tr><td class="dim nowrap">11-09</td><td><b>Ankr Bridge</b></td><td class="num">$304,500</td><td>Cross-Chain Message Spoofing</td></tr><tr><td class="dim nowrap">11-08</td><td><b>LNbits</b></td><td class="num">$0</td><td>Unknown</td></tr><tr><td class="dim nowrap">11-08</td><td><b>ACryptoS</b></td><td class="num">$665,429</td><td>Missing Input Validation</td></tr><tr><td class="dim nowrap">11-07</td><td><b>LiquidCore</b></td><td class="num">$136,664</td><td>Deployer Key Compromised</td></tr><tr><td class="dim nowrap">11-06</td><td><b>Keplr Wallet (Web3Auth)</b></td><td class="num">$0</td><td>Key Leaked via Infrastructure</td></tr><tr><td class="dim nowrap">11-05</td><td><b>TENDRIL</b></td><td class="num">$550,000</td><td>Swap Logic Flaw</td></tr><tr><td class="dim nowrap">11-05</td><td><b>Loopscale Lending</b></td><td class="num">$0</td><td>Unknown</td></tr></tbody></table></div><div class="note">看手法不要只看金額 —— 同一個手法能不能用在你跑的協議上,那才是該問的問題。</div><div class="section-head"><span>新上架協議</span></div><div class="tablewrap"><table style="min-width:520px"><thead><tr><th>上架</th><th>協議</th><th>類型</th><th>鏈</th><th>TVL</th></tr></thead><tbody><tr><td class="dim nowrap">11-15</td><td><a href="https://hookr.fun/" target="_blank" rel="noopener">Hookr</a> </td><td class="dim nowrap">Liquidity Automation</td><td class="dim nowrap">Robinhood Chain</td><td class="num">$15,154</td></tr><tr><td class="dim nowrap">11-15</td><td>GreenDildo </td><td class="dim nowrap">Launchpad</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-15</td><td>Stoa </td><td class="dim nowrap">DEX Aggregator</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-15</td><td>BLNT V3 </td><td class="dim nowrap">Lending</td><td class="dim nowrap">Stellar</td><td class="num">$276,985</td></tr><tr><td class="dim nowrap">11-15</td><td>AurixDEX </td><td class="dim nowrap">Dexs</td><td class="dim nowrap">Flare</td><td class="num">$1,106</td></tr><tr><td class="dim nowrap">11-14</td><td>Paboxo </td><td class="dim nowrap">Lending</td><td class="dim nowrap">Robinhood Chain</td><td class="num">$4,861</td></tr><tr><td class="dim nowrap">11-14</td><td>Nexwest </td><td class="dim nowrap">Interface</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td>Curveball </td><td class="dim nowrap">Launchpad</td><td class="dim nowrap">RISE</td><td class="num">$31</td></tr><tr><td class="dim nowrap">11-14</td><td>KleosSwap </td><td class="dim nowrap">Dexs</td><td class="dim nowrap">Elysium Kinetiq</td><td class="num">$39,461</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://stratidex.io" target="_blank" rel="noopener">StratiDex</a> </td><td class="dim nowrap">Interface</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://www.exodus.com/pay" target="_blank" rel="noopener">Exodus Pay</a> </td><td class="dim nowrap">Crypto Card Issuer</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://send.app/" target="_blank" rel="noopener">Send Card</a> </td><td class="dim nowrap">Crypto Card Issuer</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://www.coca.xyz/" target="_blank" rel="noopener">COCA Card</a> </td><td class="dim nowrap">Crypto Card Issuer</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://dogpay.com/us/cards" target="_blank" rel="noopener">DogPay Card</a> </td><td class="dim nowrap">Crypto Card Issuer</td><td class="dim nowrap">?</td><td class="num">$0</td></tr><tr><td class="dim nowrap">11-14</td><td><a href="https://www.oobit.com/crypto-card" target="_blank" rel="noopener">Oobit Card</a> </td><td class="dim nowrap">Crypto Card Issuer</td><td class="dim nowrap">?</td><td class="num">$0</td></tr></tbody></table></div><footer>由 crypto-bot 自動產生 · DefiLlama(協議 / 收益 / 駭客)· Grok(Venice API,含 X 搜尋)<br><b>不構成投資建議。</b>套利機會多半在被公開時就已收斂,高 APY 多半來自排放而非手續費。下手前自己再算一次。</footer></body></html>
